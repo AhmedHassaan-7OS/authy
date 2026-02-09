@@ -45,6 +45,12 @@ class AvatarPicker extends StatelessWidget {
                           width: 88,
                           height: 88,
                           fit: BoxFit.cover,
+                          errorBuilder: (_, __, ___) => SvgPicture.asset(
+                            AppAssets.authPlaceholderSvg,
+                            width: 72,
+                            height: 72,
+                            fit: BoxFit.cover,
+                          ),
                         ),
                 ),
               ),

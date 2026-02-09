@@ -7,11 +7,24 @@ class AuthHeroImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SvgPicture.asset(
-      AppAssets.authPlaceholderSvg,
-      width: 240,
-      height: 180,
-      fit: BoxFit.contain,
+    return Container(
+      padding: const EdgeInsets.all(8),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(24),
+        boxShadow: [
+          BoxShadow(
+            color: const Color(0xffCBB7FF).withOpacity(0.25),
+            blurRadius: 30,
+            offset: const Offset(0, 10),
+          ),
+        ],
+      ),
+      child: SvgPicture.asset(
+        AppAssets.authPlaceholderSvg,
+        width: 240,
+        height: 180,
+        fit: BoxFit.contain,
+      ),
     );
   }
 }

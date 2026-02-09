@@ -34,32 +34,44 @@ class _AuthBackground extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [Color(0xffF7F2FF), Color(0xffEDE8FF)],
+          colors: [Color(0xff100B20), Color(0xff24184A)],
         ),
       ),
       child: Stack(
         children: [
           Positioned(
-            top: -120,
+            top: -140,
             right: -80,
             child: Container(
               width: 260,
               height: 260,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.white.withOpacity(0.6),
+                color: const Color(0xffCBB7FF).withOpacity(0.16),
               ),
             ),
           ),
           Positioned(
-            bottom: -140,
-            left: -90,
+            bottom: -160,
+            left: -100,
             child: Container(
-              width: 280,
-              height: 280,
+              width: 300,
+              height: 300,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: const Color(0xffD8CBFF).withOpacity(0.4),
+                color: const Color(0xff7C66C5).withOpacity(0.2),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 120,
+            left: -60,
+            child: Container(
+              width: 180,
+              height: 180,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: const Color(0xff2E1F5A).withOpacity(0.35),
               ),
             ),
           ),

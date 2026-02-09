@@ -4,6 +4,7 @@ import 'package:authy/features/auth/presentation/views/auth_entry_view.dart';
 import 'package:authy/features/auth/presentation/views/profile_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:authy/core/widgets/app_snackbar.dart';
 
 class AuthRootView extends StatelessWidget {
   const AuthRootView({super.key});
@@ -13,9 +14,7 @@ class AuthRootView extends StatelessWidget {
     return BlocConsumer<AuthCubit, AuthState>(
       listener: (context, state) {
         if (state.status == AuthStatus.failure && state.errorMessage != null) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text(state.errorMessage!)),
-          );
+          AppSnackBar.showError(context, state.errorMessage!);
         }
       },
       builder: (context, state) {
