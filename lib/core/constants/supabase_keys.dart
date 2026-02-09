@@ -1,0 +1,2 @@
+const kSupabaseUrl = 'https://arpjquxpevchirxdwaky.supabase.co';
+const kSupabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFycGpxdXhwZXZjaGlyeGR3YWt5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA1NzE0MTIsImV4cCI6MjA4NjE0NzQxMn0.hTvLDdc-BwUu0G3Lo8XB0OZubMvh2tn2bgWJxR7jCoY';
