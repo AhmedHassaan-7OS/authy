@@ -1,17 +1,135 @@
-﻿# motion ai
+﻿# Motion AI
 
-A new Flutter project.
+Motion AI is a Flutter app that combines authentication and AI-powered image analysis in one clean flow.
+
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Architecture](#architecture)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Supabase Configuration](#supabase-configuration)
+- [Screenshots and Demo Video](#screenshots-and-demo-video)
+- [Future Improvements](#future-improvements)
+
+## Overview
+The app currently includes:
+- Authentication with Supabase (`Sign In`, `Sign Up`, `Sign Out`)
+- Restore current user session on startup
+- Profile editing and avatar upload
+- Text extraction from images using Google ML Kit
+- Face classification from selected images
+
+## Features
+- Auth flow with proper loading/error handling
+- Profile management
+- AI Text Scan (OCR)
+- Face Classifier
+- State management with Cubit
+
+## Tech Stack
+- `Flutter`
+- `flutter_bloc`
+- `get_it`
+- `supabase_flutter`
+- `google_ml_kit`
+- `image_picker`
+
+## Architecture
+The project follows **Clean Architecture** inside `features/auth` with clear layer separation:
+
+1. `Presentation`
+Contains UI and state handling: `views`, `widgets`, `cubit`.
+
+2. `Domain`
+Contains business rules and contracts: `entities`, repository contracts, and `usecases`.
+
+3. `Data`
+Contains implementations and external integrations: `datasources`, `models`, repository implementations.
+
+4. `Core`
+Contains shared modules used across the app: `constants`, `theme`, `utils`, `widgets`.
+
+Flow:
+`UI -> Cubit -> UseCase -> Repository (Domain Contract) -> DataSource -> External Service`
+
+## Project Structure
+```text
+lib/
+  core/
+    constants/
+    theme/
+    utils/
+    widgets/
+  features/
+    auth/
+      data/
+        datasources/
+        models/
+        repositories/
+      domain/
+        entities/
+        repositories/
+        usecases/
+      presentation/
+        cubit/
+        views/
+        widgets/
+  main.dart
+```
 
 ## Getting Started
+### 1) Prerequisites
+- Flutter SDK (compatible with Dart `^3.10.8`)
+- Android Studio or VS Code
+- Emulator or physical device
 
-This project is a starting point for a Flutter application.
+### 2) Install dependencies
+```bash
+flutter pub get
+```
 
-A few resources to get you started if this is your first Flutter project:
+### 3) Run the app
+```bash
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Supabase Configuration
+Current keys are in:
+- `lib/core/constants/supabase_keys.dart`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+For production, move secrets out of source code (for example via `--dart-define` or a secure secret manager).
 
+## Screenshots and Demo Video
+Use this section to showcase real app usage.
+
+### Screenshots
+Put images in:
+- `docs/media/screenshots/`
+
+Template:
+
+| Screen | Preview |
+|---|---|
+| Splash | ![Splash](docs/media/screenshots/splash.png) |
+| Sign In | ![Sign In](docs/media/screenshots/sign-in.png) |
+| Sign Up | ![Sign Up](docs/media/screenshots/sign-up.png) |
+| Home | ![Home](docs/media/screenshots/home.png) |
+| Text Scan | ![Text Scan](docs/media/screenshots/text-scan.png) |
+| Face Classifier | ![Face Classifier](docs/media/screenshots/face-classifier.png) |
+| Profile | ![Profile](docs/media/screenshots/profile.png) |
+
+### Demo Video
+Put videos in:
+- `docs/media/videos/`
+
+Template link:
+- [Watch Demo](docs/media/videos/app-demo.mp4)
+
+If you upload to YouTube or Google Drive, replace the link with your hosted URL.
+
+## Future Improvements
+- Add unit and widget tests for Cubits and UseCases
+- Move all secrets to runtime config
+- Add CI checks (`format`, `analyze`, `test`) before merge
