@@ -1,6 +1,10 @@
 ﻿# Motion AI
 
-Motion AI is a Flutter app that combines authentication and AI-powered image analysis in one clean flow.
+Motion AI is a Flutter app that comb
+
+https://github.com/user-attachments/assets/2881a33a-30eb-4050-a133-a1424a9aad72
+
+ines authentication and AI-powered image analysis in one clean flow.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -123,7 +127,6 @@ Template:
 ### Demo Video
 
 
-https://github.com/user-attachments
 ![WhatsApp Image 2026-02-11 at 9 16 09 PM](https://github.com/user-attachments/assets/777ef7b0-d6ff-401b-8e6a-01463578dffe)
 /assets/55989018-531b-4520-bd09-a81804de6f2a
 ![2](https://github.com/user-attachments/assets/3c170aec-5a10-4018-8761-c22cef8e1cc4)
