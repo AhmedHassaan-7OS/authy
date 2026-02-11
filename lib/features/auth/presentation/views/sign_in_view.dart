@@ -1,4 +1,4 @@
-import 'package:authy/features/auth/presentation/cubit/auth_cubit.dart';
+ï»¿import 'package:authy/features/auth/presentation/cubit/auth_cubit.dart';
 import 'package:authy/features/auth/presentation/widgets/auth_header.dart';
 import 'package:authy/features/auth/presentation/widgets/auth_text_field.dart';
 import 'package:authy/features/auth/presentation/widgets/auth_toggle.dart';
@@ -44,7 +44,7 @@ class _SignInViewState extends State<SignInView> {
         const SizedBox(height: 16),
         AuthTextField(
           label: 'Password',
-          hint: '••••••••',
+          hint: '********',
           controller: passwordController,
           obscure: true,
         ),

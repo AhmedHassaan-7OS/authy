@@ -2,21 +2,35 @@ import 'package:flutter/material.dart';
 
 class AuthScaffold extends StatelessWidget {
   final Widget child;
-  const AuthScaffold({super.key, required this.child});
+  final Widget? floatingBottomBar;
+  final bool centerContent;
+
+  const AuthScaffold({
+    super.key,
+    required this.child,
+    this.floatingBottomBar,
+    this.centerContent = true,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
+      bottomNavigationBar: const SizedBox.shrink(),
       body: Stack(
         children: [
           const _AuthBackground(),
           SafeArea(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Center(
-                child: SingleChildScrollView(child: child),
-              ),
+              child: centerContent
+                  ? Center(child: SingleChildScrollView(child: child))
+                  : SingleChildScrollView(child: child),
             ),
+          ),
+          if (floatingBottomBar != null) Align(
+            alignment: Alignment.bottomCenter,
+            child: floatingBottomBar!,
           ),
         ],
       ),

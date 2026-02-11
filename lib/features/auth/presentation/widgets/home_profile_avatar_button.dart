@@ -15,8 +15,8 @@ class HomeProfileAvatarButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: Alignment.topRight,
+    return Transform.translate(
+      offset: const Offset(0, -10),
       child: GestureDetector(
         onTap: onTap,
         child: Container(
@@ -26,7 +26,7 @@ class HomeProfileAvatarButton extends StatelessWidget {
             border: Border.all(color: const Color(0x66CBB7FF)),
             boxShadow: [
               BoxShadow(
-                color: kPrimaryColor.withOpacity(0.35),
+                color: kPrimaryColor.withValues(alpha: 0.35),
                 blurRadius: 14,
                 offset: const Offset(0, 6),
               ),
@@ -48,7 +48,7 @@ class HomeProfileAvatarButton extends StatelessWidget {
                       width: 48,
                       height: 48,
                       fit: BoxFit.cover,
-                      errorBuilder: (_, __, ___) => SvgPicture.asset(
+                      errorBuilder: (_, _, _) => SvgPicture.asset(
                         AppAssets.authPlaceholderSvg,
                         width: 48,
                         height: 48,
