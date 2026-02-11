@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:authy/core/constants/app_constants.dart';
+﻿import 'package:flutter/material.dart';
+import 'package:motion_ai/core/constants/app_constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
@@ -50,3 +50,4 @@ class AppTheme {
     );
   }
 }
+

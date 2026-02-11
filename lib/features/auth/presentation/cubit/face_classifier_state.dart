@@ -1,4 +1,4 @@
-import 'package:authy/features/auth/domain/entities/face_classification_result.dart';
+﻿import 'package:motion_ai/features/auth/domain/entities/face_classification_result.dart';
 import 'package:equatable/equatable.dart';
 
 enum FaceClassifierStatus { initial, loading, success, failure }
@@ -30,3 +30,4 @@ class FaceClassifierState extends Equatable {
   @override
   List<Object?> get props => [status, result, errorMessage];
 }
+

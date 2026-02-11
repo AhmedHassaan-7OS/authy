@@ -1,10 +1,10 @@
-import 'dart:typed_data';
+﻿import 'dart:typed_data';
 
-import 'package:authy/core/constants/app_constants.dart';
-import 'package:authy/features/auth/data/models/sign_in_model.dart';
-import 'package:authy/features/auth/data/models/sign_up_model.dart';
-import 'package:authy/features/auth/data/models/user_model.dart';
-import 'package:authy/features/auth/domain/entities/app_user.dart';
+import 'package:motion_ai/core/constants/app_constants.dart';
+import 'package:motion_ai/features/auth/data/models/sign_in_model.dart';
+import 'package:motion_ai/features/auth/data/models/sign_up_model.dart';
+import 'package:motion_ai/features/auth/data/models/user_model.dart';
+import 'package:motion_ai/features/auth/domain/entities/app_user.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'supabase_auth_remote_data_source.dart';
@@ -87,3 +87,4 @@ class SupabaseAuthRemoteDataSource implements AuthRemoteDataSource {
     return _client.storage.from(kAvatarBucket).getPublicUrl(path);
   }
 }
+

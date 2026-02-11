@@ -1,10 +1,8 @@
-import 'package:authy/core/constants/supabase_keys.dart';
-import 'package:authy/core/theme/app_theme.dart';
-import 'package:authy/core/utils/service_locator.dart';
-import 'package:authy/features/auth/presentation/cubit/auth_cubit.dart';
-import 'package:authy/features/auth/presentation/views/auth_root_view.dart';
+﻿import 'package:motion_ai/core/constants/supabase_keys.dart';
+import 'package:motion_ai/core/theme/app_theme.dart';
+import 'package:motion_ai/core/utils/service_locator.dart';
+import 'package:motion_ai/features/auth/presentation/views/intro_launch_view.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 Future<void> main() async {
@@ -24,12 +22,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Authy',
+      title: 'motion ai',
       theme: AppTheme.light,
-      home: BlocProvider(
-        create: (_) => getIt<AuthCubit>()..loadCurrentUser(),
-        child: const AuthRootView(),
-      ),
+      home: const IntroLaunchView(),
     );
   }
 }

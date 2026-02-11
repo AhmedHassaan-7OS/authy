@@ -1,4 +1,4 @@
-import 'package:authy/features/auth/domain/entities/app_user.dart';
+﻿import 'package:motion_ai/features/auth/domain/entities/app_user.dart';
 
 abstract class AuthRepository {
   Future<AppUser?> getCurrentUser();
@@ -12,3 +12,4 @@ abstract class AuthRepository {
   Future<AppUser> updateProfile({String? fullName, String? avatarUrl});
   Future<String> uploadAvatar({required List<int> bytes, required String ext});
 }
+

@@ -1,5 +1,5 @@
-import 'package:authy/features/auth/domain/entities/app_user.dart';
-import 'package:authy/features/auth/domain/repositories/auth_repository.dart';
+﻿import 'package:motion_ai/features/auth/domain/entities/app_user.dart';
+import 'package:motion_ai/features/auth/domain/repositories/auth_repository.dart';
 
 class UpdateProfileUseCase {
   final AuthRepository _repo;
@@ -9,3 +9,4 @@ class UpdateProfileUseCase {
     return _repo.updateProfile(fullName: fullName, avatarUrl: avatarUrl);
   }
 }
+

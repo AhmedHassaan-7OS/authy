@@ -1,7 +1,7 @@
-import 'dart:typed_data';
+﻿import 'dart:typed_data';
 
-import 'package:authy/core/constants/app_constants.dart';
-import 'package:authy/core/utils/app_assets.dart';
+import 'package:motion_ai/core/constants/app_constants.dart';
+import 'package:motion_ai/core/utils/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:image_picker/image_picker.dart';
@@ -72,3 +72,4 @@ class AvatarPicker extends StatelessWidget {
     );
   }
 }
+

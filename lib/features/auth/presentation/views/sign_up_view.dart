@@ -1,8 +1,8 @@
-import 'package:authy/features/auth/presentation/cubit/auth_cubit.dart';
-import 'package:authy/features/auth/presentation/widgets/auth_header.dart';
-import 'package:authy/features/auth/presentation/widgets/auth_text_field.dart';
-import 'package:authy/features/auth/presentation/widgets/auth_toggle.dart';
-import 'package:authy/features/auth/presentation/widgets/primary_button.dart';
+﻿import 'package:motion_ai/features/auth/presentation/cubit/auth_cubit.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/auth_header.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/auth_text_field.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/auth_toggle.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/primary_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -77,3 +77,4 @@ class _SignUpViewState extends State<SignUpView> {
     );
   }
 }
+

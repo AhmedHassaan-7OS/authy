@@ -1,4 +1,4 @@
-import 'package:authy/features/auth/domain/entities/face_category.dart';
+﻿import 'package:motion_ai/features/auth/domain/entities/face_category.dart';
 import 'package:equatable/equatable.dart';
 
 class FaceClassificationResult extends Equatable {
@@ -15,3 +15,4 @@ class FaceClassificationResult extends Equatable {
   @override
   List<Object?> get props => [category, detectedFaces, isHeuristic];
 }
+

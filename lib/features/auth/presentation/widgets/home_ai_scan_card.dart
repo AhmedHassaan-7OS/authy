@@ -1,6 +1,6 @@
-import 'package:authy/features/auth/presentation/widgets/auth_card.dart';
-import 'package:authy/features/auth/presentation/widgets/auth_header.dart';
-import 'package:authy/features/auth/presentation/widgets/primary_button.dart';
+﻿import 'package:motion_ai/features/auth/presentation/widgets/auth_card.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/auth_header.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/primary_button.dart';
 import 'package:flutter/material.dart';
 
 class HomeAiScanCard extends StatelessWidget {
@@ -51,3 +51,4 @@ class HomeAiScanCard extends StatelessWidget {
     );
   }
 }
+

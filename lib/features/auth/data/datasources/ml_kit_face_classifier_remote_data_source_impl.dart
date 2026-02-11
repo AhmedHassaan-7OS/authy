@@ -1,6 +1,6 @@
-import 'package:authy/features/auth/data/datasources/ml_kit_face_classifier_remote_data_source.dart';
-import 'package:authy/features/auth/domain/entities/face_category.dart';
-import 'package:authy/features/auth/domain/entities/face_classification_result.dart';
+﻿import 'package:motion_ai/features/auth/data/datasources/ml_kit_face_classifier_remote_data_source.dart';
+import 'package:motion_ai/features/auth/domain/entities/face_category.dart';
+import 'package:motion_ai/features/auth/domain/entities/face_classification_result.dart';
 import 'package:google_ml_kit/google_ml_kit.dart';
 
 class MlKitFaceClassifierRemoteDataSourceImpl
@@ -39,3 +39,4 @@ class MlKitFaceClassifierRemoteDataSourceImpl
     return smiles >= 0.55 ? FaceCategory.girl : FaceCategory.boy;
   }
 }
+

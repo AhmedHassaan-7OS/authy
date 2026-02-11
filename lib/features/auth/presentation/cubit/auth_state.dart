@@ -1,5 +1,5 @@
-import 'package:equatable/equatable.dart';
-import 'package:authy/features/auth/domain/entities/app_user.dart';
+﻿import 'package:equatable/equatable.dart';
+import 'package:motion_ai/features/auth/domain/entities/app_user.dart';
 
 enum AuthStatus { initial, loading, authenticated, unauthenticated, failure }
 
@@ -30,3 +30,4 @@ class AuthState extends Equatable {
   @override
   List<Object?> get props => [status, user, errorMessage];
 }
+

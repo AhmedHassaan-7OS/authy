@@ -1,4 +1,4 @@
-import 'package:authy/features/auth/domain/repositories/ai_text_repository.dart';
+﻿import 'package:motion_ai/features/auth/domain/repositories/ai_text_repository.dart';
 
 class ExtractTextFromImageUseCase {
   final AiTextRepository _repository;
@@ -9,3 +9,4 @@ class ExtractTextFromImageUseCase {
     return _repository.extractTextFromImage(imagePath);
   }
 }
+

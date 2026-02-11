@@ -1,4 +1,4 @@
-import 'package:authy/features/auth/domain/repositories/auth_repository.dart';
+﻿import 'package:motion_ai/features/auth/domain/repositories/auth_repository.dart';
 
 class UploadAvatarUseCase {
   final AuthRepository _repo;
@@ -8,3 +8,4 @@ class UploadAvatarUseCase {
     return _repo.uploadAvatar(bytes: bytes, ext: ext);
   }
 }
+

@@ -1,16 +1,16 @@
-import 'package:authy/core/utils/service_locator.dart';
-import 'package:authy/core/widgets/app_snackbar.dart';
-import 'package:authy/features/auth/domain/entities/app_user.dart';
-import 'package:authy/features/auth/presentation/cubit/ai_text_cubit.dart';
-import 'package:authy/features/auth/presentation/cubit/ai_text_state.dart';
-import 'package:authy/features/auth/presentation/cubit/face_classifier_cubit.dart';
-import 'package:authy/features/auth/presentation/cubit/face_classifier_state.dart';
-import 'package:authy/features/auth/presentation/views/profile_view.dart';
-import 'package:authy/features/auth/presentation/widgets/auth_scaffold.dart';
-import 'package:authy/features/auth/presentation/widgets/home_ai_scan_card.dart';
-import 'package:authy/features/auth/presentation/widgets/home_face_classifier_card.dart';
-import 'package:authy/features/auth/presentation/widgets/home_profile_avatar_button.dart';
-import 'package:authy/features/auth/presentation/widgets/floating_capsule_bottom_nav.dart';
+﻿import 'package:motion_ai/core/utils/service_locator.dart';
+import 'package:motion_ai/core/widgets/app_snackbar.dart';
+import 'package:motion_ai/features/auth/domain/entities/app_user.dart';
+import 'package:motion_ai/features/auth/presentation/cubit/ai_text_cubit.dart';
+import 'package:motion_ai/features/auth/presentation/cubit/ai_text_state.dart';
+import 'package:motion_ai/features/auth/presentation/cubit/face_classifier_cubit.dart';
+import 'package:motion_ai/features/auth/presentation/cubit/face_classifier_state.dart';
+import 'package:motion_ai/features/auth/presentation/views/profile_view.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/auth_scaffold.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/home_ai_scan_card.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/home_face_classifier_card.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/home_profile_avatar_button.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/floating_capsule_bottom_nav.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
@@ -158,3 +158,4 @@ class _HomeViewState extends State<HomeView> {
     );
   }
 }
+

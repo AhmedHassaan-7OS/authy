@@ -1,8 +1,8 @@
-import 'dart:typed_data';
+﻿import 'dart:typed_data';
 
-import 'package:authy/features/auth/data/models/sign_in_model.dart';
-import 'package:authy/features/auth/data/models/sign_up_model.dart';
-import 'package:authy/features/auth/domain/entities/app_user.dart';
+import 'package:motion_ai/features/auth/data/models/sign_in_model.dart';
+import 'package:motion_ai/features/auth/data/models/sign_up_model.dart';
+import 'package:motion_ai/features/auth/domain/entities/app_user.dart';
 
 abstract class AuthRemoteDataSource {
   Future<AppUser?> getCurrentUser();
@@ -12,3 +12,4 @@ abstract class AuthRemoteDataSource {
   Future<AppUser> updateProfile({String? fullName, String? avatarUrl});
   Future<String> uploadAvatar({required Uint8List bytes, required String ext});
 }
+

@@ -1,4 +1,4 @@
-import 'package:authy/features/auth/domain/usecases/extract_text_from_image_usecase.dart';
+﻿import 'package:motion_ai/features/auth/domain/usecases/extract_text_from_image_usecase.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'ai_text_state.dart';
@@ -35,3 +35,4 @@ class AiTextCubit extends Cubit<AiTextState> {
     }
   }
 }
+

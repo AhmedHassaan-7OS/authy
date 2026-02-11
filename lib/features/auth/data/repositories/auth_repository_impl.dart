@@ -1,10 +1,10 @@
-import 'dart:typed_data';
+﻿import 'dart:typed_data';
 
-import 'package:authy/features/auth/data/datasources/supabase_auth_remote_data_source.dart';
-import 'package:authy/features/auth/data/models/sign_in_model.dart';
-import 'package:authy/features/auth/data/models/sign_up_model.dart';
-import 'package:authy/features/auth/domain/entities/app_user.dart';
-import 'package:authy/features/auth/domain/repositories/auth_repository.dart';
+import 'package:motion_ai/features/auth/data/datasources/supabase_auth_remote_data_source.dart';
+import 'package:motion_ai/features/auth/data/models/sign_in_model.dart';
+import 'package:motion_ai/features/auth/data/models/sign_up_model.dart';
+import 'package:motion_ai/features/auth/domain/entities/app_user.dart';
+import 'package:motion_ai/features/auth/domain/repositories/auth_repository.dart';
 
 class AuthRepositoryImpl implements AuthRepository {
   final AuthRemoteDataSource _remote;
@@ -42,3 +42,4 @@ class AuthRepositoryImpl implements AuthRepository {
     return _remote.uploadAvatar(bytes: Uint8List.fromList(bytes), ext: ext);
   }
 }
+

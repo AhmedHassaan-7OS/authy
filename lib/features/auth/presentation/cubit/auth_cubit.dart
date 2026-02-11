@@ -1,11 +1,11 @@
-import 'dart:typed_data';
+﻿import 'dart:typed_data';
 
-import 'package:authy/features/auth/domain/usecases/get_current_user_usecase.dart';
-import 'package:authy/features/auth/domain/usecases/sign_in_usecase.dart';
-import 'package:authy/features/auth/domain/usecases/sign_out_usecase.dart';
-import 'package:authy/features/auth/domain/usecases/sign_up_usecase.dart';
-import 'package:authy/features/auth/domain/usecases/update_profile_usecase.dart';
-import 'package:authy/features/auth/domain/usecases/upload_avatar_usecase.dart';
+import 'package:motion_ai/features/auth/domain/usecases/get_current_user_usecase.dart';
+import 'package:motion_ai/features/auth/domain/usecases/sign_in_usecase.dart';
+import 'package:motion_ai/features/auth/domain/usecases/sign_out_usecase.dart';
+import 'package:motion_ai/features/auth/domain/usecases/sign_up_usecase.dart';
+import 'package:motion_ai/features/auth/domain/usecases/update_profile_usecase.dart';
+import 'package:motion_ai/features/auth/domain/usecases/upload_avatar_usecase.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'auth_state.dart';
@@ -99,3 +99,4 @@ class AuthCubit extends Cubit<AuthState> {
     }
   }
 }
+

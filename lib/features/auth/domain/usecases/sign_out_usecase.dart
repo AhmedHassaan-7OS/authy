@@ -1,4 +1,4 @@
-import 'package:authy/features/auth/domain/repositories/auth_repository.dart';
+﻿import 'package:motion_ai/features/auth/domain/repositories/auth_repository.dart';
 
 class SignOutUseCase {
   final AuthRepository _repo;
@@ -6,3 +6,4 @@ class SignOutUseCase {
 
   Future<void> call() => _repo.signOut();
 }
+

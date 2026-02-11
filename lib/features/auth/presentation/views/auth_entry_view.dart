@@ -1,10 +1,10 @@
-import 'package:authy/core/constants/app_constants.dart';
-import 'package:authy/features/auth/presentation/views/sign_in_view.dart';
-import 'package:authy/features/auth/presentation/views/sign_up_view.dart';
-import 'package:authy/features/auth/presentation/widgets/auth_card.dart';
-import 'package:authy/features/auth/presentation/widgets/auth_hero_image.dart';
-import 'package:authy/features/auth/presentation/widgets/auth_scaffold.dart';
-import 'package:authy/core/widgets/app_loader.dart';
+﻿import 'package:motion_ai/core/constants/app_constants.dart';
+import 'package:motion_ai/features/auth/presentation/views/sign_in_view.dart';
+import 'package:motion_ai/features/auth/presentation/views/sign_up_view.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/auth_card.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/auth_hero_image.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/auth_scaffold.dart';
+import 'package:motion_ai/core/widgets/app_loader.dart';
 import 'package:flutter/material.dart';
 
 class AuthEntryView extends StatefulWidget {
@@ -73,3 +73,4 @@ class AuthEntryLoadingView extends StatelessWidget {
     );
   }
 }
+

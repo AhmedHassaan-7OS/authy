@@ -1,14 +1,14 @@
-import 'dart:typed_data';
+﻿import 'dart:typed_data';
 
-import 'package:authy/core/constants/app_constants.dart';
-import 'package:authy/features/auth/domain/entities/app_user.dart';
-import 'package:authy/features/auth/presentation/cubit/auth_cubit.dart';
-import 'package:authy/features/auth/presentation/widgets/auth_card.dart';
-import 'package:authy/features/auth/presentation/widgets/auth_header.dart';
-import 'package:authy/features/auth/presentation/widgets/auth_scaffold.dart';
-import 'package:authy/features/auth/presentation/widgets/auth_text_field.dart';
-import 'package:authy/features/auth/presentation/widgets/avatar_picker.dart';
-import 'package:authy/features/auth/presentation/widgets/primary_button.dart';
+import 'package:motion_ai/core/constants/app_constants.dart';
+import 'package:motion_ai/features/auth/domain/entities/app_user.dart';
+import 'package:motion_ai/features/auth/presentation/cubit/auth_cubit.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/auth_card.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/auth_header.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/auth_scaffold.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/auth_text_field.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/avatar_picker.dart';
+import 'package:motion_ai/features/auth/presentation/widgets/primary_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -108,3 +108,4 @@ class _ProfileViewState extends State<ProfileView> {
     );
   }
 }
+
