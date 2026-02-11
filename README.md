@@ -121,11 +121,14 @@ Template:
 | Profile | ![Profile](docs/media/screenshots/profile.png) |
 
 ### Demo Video
-Put videos in:
-- `docs/media/videos/`
 
-Template link:
-- [Watch Demo](docs/media/videos/app-demo.mp4)
+
+https://github.com/user-attachments
+![WhatsApp Image 2026-02-11 at 9 16 09 PM](https://github.com/user-attachments/assets/777ef7b0-d6ff-401b-8e6a-01463578dffe)
+/assets/55989018-531b-4520-bd09-a81804de6f2a
+![2](https://github.com/user-attachments/assets/3c170aec-5a10-4018-8761-c22cef8e1cc4)
+![3](https://github.com/user-attachments/assets/2ff9f461-f733-42ae-b160-2cad74da72fa)
+
 
 If you upload to YouTube or Google Drive, replace the link with your hosted URL.
 
