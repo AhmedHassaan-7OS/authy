@@ -1,6 +1,6 @@
 import 'package:authy/core/constants/app_constants.dart';
-import 'sign_in_view.dart';
-import 'sign_up_view.dart';
+import 'package:authy/features/auth/presentation/views/sign_in_view.dart';
+import 'package:authy/features/auth/presentation/views/sign_up_view.dart';
 import 'package:authy/features/auth/presentation/widgets/auth_card.dart';
 import 'package:authy/features/auth/presentation/widgets/auth_hero_image.dart';
 import 'package:authy/features/auth/presentation/widgets/auth_scaffold.dart';

@@ -1,7 +1,7 @@
 import 'package:authy/features/auth/presentation/cubit/auth_cubit.dart';
 import 'package:authy/features/auth/presentation/cubit/auth_state.dart';
 import 'package:authy/features/auth/presentation/views/auth_entry_view.dart';
-import 'package:authy/features/auth/presentation/views/profile_view.dart';
+import 'package:authy/features/auth/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:authy/core/widgets/app_snackbar.dart';
@@ -22,7 +22,7 @@ class AuthRootView extends StatelessWidget {
           return const AuthEntryLoadingView();
         }
         if (state.status == AuthStatus.authenticated && state.user != null) {
-          return ProfileView(user: state.user!);
+          return HomeView(user: state.user!);
         }
         return const AuthEntryView();
       },
